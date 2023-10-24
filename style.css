@@ -1,0 +1,84 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background: #ffc8dd;
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:700px;
+    padding:40px;
+    border-radius:10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    background: #fff;
+    color:#000;
+    text-align:center;
+
+}
+.container h1{
+    position:relative;
+   font-size: 35px;
+   margin-bottom:35px;
+}
+.container h1::after{
+    content:'';
+    background:#fb6f92;
+    width:75px;
+    height:3px;
+    position:absolute;
+    bottom:-10%;
+    left:50%;
+     transform:translateX(-50%); 
+}
+.container blockquote{
+    font-size:22px;
+    line-height: 22px;
+}
+.container blockquote::before ,.container blockquote::after{
+    content:'"';
+}
+.container span{
+    display:block;
+    margin-top:10px;
+    position:relative;
+    float:right;
+}
+.container span::before{
+    content:'';
+    width: 20px;
+    height:3px;
+    background:#fb6f92;
+    position:absolute;
+    top:50%;
+    left:-32%;
+    
+}
+.container div{
+    display:flex;
+    justify-content: center;
+    margin-top:40px;
+    width:100%;
+}
+.container div button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: #fb6f92;
+    color:#fff;
+    border:1px solid #fb6f92;
+    width:150px;
+    height:50px;
+    border-radius:10px;
+    margin:15px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    cursor:pointer;
+}
